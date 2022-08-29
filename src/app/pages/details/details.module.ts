@@ -8,14 +8,18 @@ import { DetailsPageRoutingModule } from './details-routing.module';
 
 import { DetailsPage } from './details.page';
 import { DetailsCardModule } from 'src/app/components/budget/details-card.component';
+import { FloadtingButtonModule } from 'src/app/components/button/floating-button.component';
+import { TransactionListCardModule } from 'src/app/components/budget/transaction-list.component';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    FloadtingButtonModule,
     DetailsCardModule,
     DetailsPageRoutingModule,
+    TransactionListCardModule,
   ],
   declarations: [DetailsPage],
 })

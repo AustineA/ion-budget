@@ -13,6 +13,33 @@ export const budgets = [
     },
     currency: '$',
     title: 'Shopping',
+    transactions: [
+      {
+        title: 'Netflix',
+        date: 'Aug. 27',
+        amount: 15,
+      },
+      {
+        title: 'Apple TV',
+        date: 'Aug. 27',
+        amount: 10,
+      },
+      {
+        title: 'Spotify',
+        date: 'Aug. 27',
+        amount: 25,
+      },
+      {
+        title: 'YouTube Premium',
+        date: 'Aug. 27',
+        amount: 5,
+      },
+      {
+        title: 'HBO Max',
+        date: 'Aug. 27',
+        amount: 20,
+      },
+    ],
   },
   {
     id: '2',
@@ -28,6 +55,33 @@ export const budgets = [
     },
     currency: '$',
     title: 'Food & Drinks',
+    transactions: [
+      {
+        title: 'Netflix',
+        date: 'Aug. 27',
+        amount: 15,
+      },
+      {
+        title: 'Apple TV',
+        date: 'Aug. 27',
+        amount: 10,
+      },
+      {
+        title: 'Spotify',
+        date: 'Aug. 27',
+        amount: 25,
+      },
+      {
+        title: 'YouTube Premium',
+        date: 'Aug. 27',
+        amount: 5,
+      },
+      {
+        title: 'HBO Max',
+        date: 'Aug. 27',
+        amount: 20,
+      },
+    ],
   },
   {
     id: '3',
@@ -54,6 +108,33 @@ export const budgets = [
     },
     currency: '$',
     title: 'Entertainment',
+    transactions: [
+      {
+        title: 'Netflix',
+        date: 'Aug. 27',
+        amount: 15,
+      },
+      {
+        title: 'Apple TV',
+        date: 'Aug. 27',
+        amount: 10,
+      },
+      {
+        title: 'Spotify',
+        date: 'Aug. 27',
+        amount: 25,
+      },
+      {
+        title: 'YouTube Premium',
+        date: 'Aug. 27',
+        amount: 5,
+      },
+      {
+        title: 'HBO Max',
+        date: 'Aug. 27',
+        amount: 20,
+      },
+    ],
   },
   {
     id: '5',
@@ -69,6 +150,33 @@ export const budgets = [
     },
     currency: '$',
     title: 'Gift',
+    transactions: [
+      {
+        title: 'Netflix',
+        date: 'Aug. 27',
+        amount: 15,
+      },
+      {
+        title: 'Apple TV',
+        date: 'Aug. 27',
+        amount: 10,
+      },
+      {
+        title: 'Spotify',
+        date: 'Aug. 27',
+        amount: 25,
+      },
+      {
+        title: 'YouTube Premium',
+        date: 'Aug. 27',
+        amount: 5,
+      },
+      {
+        title: 'HBO Max',
+        date: 'Aug. 27',
+        amount: 20,
+      },
+    ],
   },
   {
     id: '6',
@@ -84,6 +192,33 @@ export const budgets = [
     },
     currency: '$',
     title: 'Pet',
+    transactions: [
+      {
+        title: 'Netflix',
+        date: 'Aug. 27',
+        amount: 15,
+      },
+      {
+        title: 'Apple TV',
+        date: 'Aug. 27',
+        amount: 10,
+      },
+      {
+        title: 'Spotify',
+        date: 'Aug. 27',
+        amount: 25,
+      },
+      {
+        title: 'YouTube Premium',
+        date: 'Aug. 27',
+        amount: 5,
+      },
+      {
+        title: 'HBO Max',
+        date: 'Aug. 27',
+        amount: 20,
+      },
+    ],
   },
   {
     id: '7',
@@ -99,5 +234,32 @@ export const budgets = [
     },
     currency: '$',
     title: 'Education',
+    transactions: [
+      {
+        title: 'Netflix',
+        date: 'Aug. 27',
+        amount: 15,
+      },
+      {
+        title: 'Apple TV',
+        date: 'Aug. 27',
+        amount: 10,
+      },
+      {
+        title: 'Spotify',
+        date: 'Aug. 27',
+        amount: 25,
+      },
+      {
+        title: 'YouTube Premium',
+        date: 'Aug. 27',
+        amount: 5,
+      },
+      {
+        title: 'HBO Max',
+        date: 'Aug. 27',
+        amount: 20,
+      },
+    ],
   },
 ];

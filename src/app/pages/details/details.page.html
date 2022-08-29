@@ -13,8 +13,23 @@
 <ion-content class="ion-padding">
   <details-card [budget]="budget" *ngIf="budget"></details-card>
   <section>
+    <span class="title">Last 7 Days</span>
     <div class="graph-card">
       <canvas id="burnChart">{{ chart }}</canvas>
     </div>
   </section>
+
+  <section>
+    <span class="title">Transactions</span>
+    <div class="graph-card">
+      <transaction-list
+        [budget]="budget"
+        [transaction]="transaction"
+        [index]="i"
+        *ngFor="let transaction of budget?.transactions; let i = index"
+      ></transaction-list>
+    </div>
+  </section>
+
+  <fbc title="Expense" color="danger"></fbc>
 </ion-content>

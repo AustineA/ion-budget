@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
   selector: 'fbc',
   template: `
     <div class="floating-button">
-      <ion-button color="green-100" mode="ios" expand="block">
+      <ion-button [color]="color" mode="ios" expand="block">
         <ion-icon name="add-outline"></ion-icon>
         {{ title }}
       </ion-button>
@@ -29,6 +29,7 @@ import { IonicModule } from '@ionic/angular';
 })
 export class FloatingButtonComponent implements OnInit {
   @Input() title: string;
+  @Input() color: string = 'green-100';
   constructor() {}
 
   ngOnInit() {}
