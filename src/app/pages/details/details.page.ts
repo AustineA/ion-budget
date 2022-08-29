@@ -9,13 +9,15 @@ import { budgets } from 'src/app/services/shared/budget';
 })
 export class DetailsPage implements OnInit {
   budget: any;
+  id: any;
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
+    this.id = this.route.snapshot.params['id'];
     this.getBudget();
   }
 
   getBudget() {
-    this.budget = budgets.find((b) => b.id == this.route.snapshot.params['id']);
+    this.budget = budgets.find((b) => b.id == this.id);
   }
 }

@@ -4,10 +4,12 @@
       <ion-back-button class="recipe-back_btn" mode="ios" text="">
       </ion-back-button>
     </ion-buttons>
-    <ion-title class="ion-no-padding">{{budget?.title}}</ion-title>
+    <ion-title class="ion-no-padding"
+      >{{ budget ? budget?.title : 'No budget with ID: ' + id }}</ion-title
+    >
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding">
-  <details-card [budget]="budget"></details-card>
+  <details-card [budget]="budget" *ngIf="budget"></details-card>
 </ion-content>

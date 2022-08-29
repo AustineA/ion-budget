@@ -51,6 +51,7 @@ import { HelperService } from 'src/app/services/shared/helper.service';
   styles: [
     `
       .large-amount {
+        margin: 0;
         margin-bottom: 0.1rem;
       }
 
