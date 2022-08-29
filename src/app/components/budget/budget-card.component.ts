@@ -11,7 +11,7 @@ import { HelperService } from 'src/app/services/shared/helper.service';
       <div class="budget-card-header">
         <div>
           <img [src]="budget?.icon" />
-          <ion-label>{{ budget?.category }}</ion-label>
+          <ion-label>{{ budget?.title }}</ion-label>
         </div>
 
         <ion-icon name="chevron-forward-outline" color="accent-200"></ion-icon>

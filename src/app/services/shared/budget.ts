@@ -11,6 +11,7 @@ export const budgets = [
       background: 'rgba(92, 154, 247, 0.2)',
     },
     currency: '$',
+    title: 'Shopping',
   },
   {
     category: 'Food & Drinks',
@@ -24,32 +25,31 @@ export const budgets = [
       background: 'rgba(92, 247, 173, 0.2)',
     },
     currency: '$',
+    title: 'Food & Drinks',
   },
   {
     category: 'Transportation',
     limit: 150,
     spent: 65,
-    left: 500,
-    notice: '🔥 Your  burn rate for Transportation is on track',
     icon: '/assets/budget-icons/transport.svg',
     color: {
       active: '#D85CF7',
       background: 'rgba(216, 92, 247, 0.2)',
     },
     currency: '$',
+    title: 'Transportation',
   },
   {
     category: 'Entertainment',
     limit: 100,
     spent: 15,
-    left: 500,
-    notice: '😱 Watch your Entertainment burn rate',
     icon: '/assets/budget-icons/entertainment.svg',
     color: {
       active: '#FF8787',
       background: 'rgba(255, 135, 135, 0.2)',
     },
     currency: '$',
+    title: 'Entertainment',
   },
   {
     category: 'Gift',
@@ -63,6 +63,7 @@ export const budgets = [
       background: 'rgba(161, 153, 255, 0.2)',
     },
     currency: '$',
+    title: 'Gift',
   },
   {
     category: 'Pet',
@@ -76,6 +77,7 @@ export const budgets = [
       background: 'rgba(254, 189, 128, 0.2)',
     },
     currency: '$',
+    title: 'Pet',
   },
   {
     category: 'Education',
@@ -89,5 +91,6 @@ export const budgets = [
       background: 'rgba(255, 255, 255, 0.2)',
     },
     currency: '$',
+    title: 'Education',
   },
 ];
