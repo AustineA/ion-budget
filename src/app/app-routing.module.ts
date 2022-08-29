@@ -14,15 +14,25 @@ const routes: Routes = [
   },
   {
     path: 'activity',
-    loadChildren: () => import('./pages/activity/activity.module').then( m => m.ActivityPageModule)
+    loadChildren: () =>
+      import('./pages/activity/activity.module').then(
+        (m) => m.ActivityPageModule
+      ),
   },
   {
     path: 'report',
-    loadChildren: () => import('./pages/report/report.module').then( m => m.ReportPageModule)
+    loadChildren: () =>
+      import('./pages/report/report.module').then((m) => m.ReportPageModule),
   },
   {
     path: 'profile',
-    loadChildren: () => import('./pages/profile/profile.module').then( m => m.ProfilePageModule)
+    loadChildren: () =>
+      import('./pages/profile/profile.module').then((m) => m.ProfilePageModule),
+  },
+  {
+    path: 'details/:id',
+    loadChildren: () =>
+      import('./pages/details/details.module').then((m) => m.DetailsPageModule),
   },
 ];
 @NgModule({

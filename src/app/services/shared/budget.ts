@@ -1,5 +1,6 @@
 export const budgets = [
   {
+    id: '1',
     category: 'Shopping',
     limit: 500,
     spent: 100,
@@ -14,6 +15,7 @@ export const budgets = [
     title: 'Shopping',
   },
   {
+    id: '2',
     category: 'Food & Drinks',
     limit: 2000,
     spent: 1500,
@@ -28,6 +30,7 @@ export const budgets = [
     title: 'Food & Drinks',
   },
   {
+    id: '3',
     category: 'Transportation',
     limit: 150,
     spent: 65,
@@ -40,6 +43,7 @@ export const budgets = [
     title: 'Transportation',
   },
   {
+    id: '4',
     category: 'Entertainment',
     limit: 100,
     spent: 15,
@@ -52,6 +56,7 @@ export const budgets = [
     title: 'Entertainment',
   },
   {
+    id: '5',
     category: 'Gift',
     limit: 300,
     spent: 150,
@@ -66,6 +71,7 @@ export const budgets = [
     title: 'Gift',
   },
   {
+    id: '6',
     category: 'Pet',
     limit: 200,
     spent: 180,
@@ -80,6 +86,7 @@ export const budgets = [
     title: 'Pet',
   },
   {
+    id: '7',
     category: 'Education',
     limit: 500,
     spent: 350,

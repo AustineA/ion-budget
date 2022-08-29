@@ -1,4 +1,4 @@
-<ion-content class="ion-padding" color="dark-100">
+<ion-content class="ion-padding">
   <section class="hero">
     <span class="title">Budget</span>
     <p class="large-amount">{{formatMoney(totalSpent(budgets))}}</p>
@@ -8,7 +8,11 @@
   </section>
 
   <section>
-    <budget-card [budget]="budget" *ngFor="let budget of budgets"></budget-card>
+    <budget-card
+      [budget]="budget"
+      *ngFor="let budget of budgets"
+      (click)="details(budget.id)"
+    ></budget-card>
   </section>
 
   <fbc title="Budget"></fbc>
