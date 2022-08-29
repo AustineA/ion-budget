@@ -1,9 +1,40 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>home</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="ion-padding" color="dark-100">
+  <section class="hero">
+    <span class="title">Budget</span>
+    <p class="large-amount">$1,230</p>
+    <span class="sub-title">Left out of $3,000 budgeted</span>
+  </section>
 
-<ion-content>
+  <section>
+    <div class="budget-card">
+      <div class="budget-card-header">
+        <div>
+          <img src="/assets/budget-icons/shopping.svg" alt="" />
+          <ion-label>Shopping</ion-label>
+        </div>
 
+        <ion-icon name="chevron-forward-outline" color="accent-200"></ion-icon>
+      </div>
+      <div class="budget-card-meta">
+        <div class="budget-card-meta-item">
+          <span>Spent</span>
+          <b>$250</b>
+        </div>
+        <div class="budget-card-meta-item">
+          <span>Left</span>
+          <b>$250</b>
+        </div>
+        <div class="budget-card-meta-item">
+          <span>Limit</span>
+          <b>$250</b>
+        </div>
+      </div>
+      <div class="budget-card-meter">
+        <ion-range [value]="50" disabled="true"></ion-range>
+      </div>
+      <span class="budget-notice">
+        🔥 Your burn rate for Shopping is on track
+      </span>
+    </div>
+  </section>
 </ion-content>
