@@ -7,6 +7,14 @@
   --ion-color-dark-100-shade: #d8d9dd;
   --ion-color-dark-100-tint: #f7f8fb;
 
+  // Green
+  --ion-color-green-100: #2b6747;
+  --ion-color-green-100-rgb: 43, 103, 71;
+  --ion-color-green-100-contrast: #ffffff;
+  --ion-color-green-100-contrast-rgb: 255, 255, 255;
+  --ion-color-green-100-shade: #265b3e;
+  --ion-color-green-100-tint: #407659;
+
   // Card BG
   --ion-color-dark-200: #ffffff;
   --ion-color-dark-200-rgb: 255, 255, 255;
@@ -39,6 +47,15 @@
   --ion-color-contrast-rgb: var(--ion-color-dark-100-contrast-rgb);
   --ion-color-shade: var(--ion-color-dark-100-shade);
   --ion-color-tint: var(--ion-color-dark-100-tint);
+}
+
+.ion-color-green-100 {
+  --ion-color-base: var(--ion-color-green-100);
+  --ion-color-base-rgb: var(--ion-color-green-100-rgb);
+  --ion-color-contrast: var(--ion-color-green-100-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-green-100-contrast-rgb);
+  --ion-color-shade: var(--ion-color-green-100-shade);
+  --ion-color-tint: var(--ion-color-green-100-tint);
 }
 
 .ion-color-dark-200 {

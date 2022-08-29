@@ -6,6 +6,8 @@
   </section>
 
   <section>
-    <budget-card></budget-card>
+    <budget-card [budget]="budget" *ngFor="let budget of budgets"></budget-card>
   </section>
+
+  <fbc [title]="'Budget'"></fbc>
 </ion-content>

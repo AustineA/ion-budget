@@ -8,6 +8,7 @@ import { HomePageRoutingModule } from './home-routing.module';
 
 import { HomePage } from './home.page';
 import { BudgetCardModule } from 'src/app/components/budget/budget-card.component';
+import { FloadtingButtonModule } from 'src/app/components/button/floating-button.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { BudgetCardModule } from 'src/app/components/budget/budget-card.componen
     FormsModule,
     IonicModule,
     HomePageRoutingModule,
+    FloadtingButtonModule,
     BudgetCardModule,
   ],
   declarations: [HomePage],

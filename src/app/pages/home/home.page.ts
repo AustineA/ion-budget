@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { budgets } from 'src/app/services/shared/budget';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+  budgets = [];
+  constructor() {
+    this.budgets = budgets;
   }
 
+  ngOnInit() {}
 }

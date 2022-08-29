@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component, NgModule, OnInit } from '@angular/core';
+import { Component, Input, NgModule, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
+import { HelperService } from 'src/app/services/shared/helper.service';
 
 @Component({
   selector: 'budget-card',
@@ -9,8 +10,8 @@ import { IonicModule } from '@ionic/angular';
     <div class="budget-card">
       <div class="budget-card-header">
         <div>
-          <img src="/assets/budget-icons/shopping.svg" alt="" />
-          <ion-label>Shopping</ion-label>
+          <img [src]="budget?.icon" />
+          <ion-label>{{ budget?.category }}</ion-label>
         </div>
 
         <ion-icon name="chevron-forward-outline" color="accent-200"></ion-icon>
@@ -18,22 +19,33 @@ import { IonicModule } from '@ionic/angular';
       <div class="budget-card-meta">
         <div class="budget-card-meta-item">
           <span>Spent</span>
-          <b>$250</b>
+          <b>{{ formatMoney(budget?.spent) }}</b>
         </div>
         <div class="budget-card-meta-item">
           <span>Left</span>
-          <b>$250</b>
+          <b>{{ formatMoney(budget?.left) }}</b>
         </div>
         <div class="budget-card-meta-item">
           <span>Limit</span>
-          <b>$250</b>
+          <b>{{ formatMoney(budget?.limit) }}</b>
         </div>
       </div>
       <div class="budget-card-meter">
-        <ion-range [value]="50" disabled="true" class="range-meter"></ion-range>
+        <ion-range
+          [value]="50"
+          disabled="true"
+          [style]="
+            '--bar-background:' +
+            budget?.color?.background +
+            ';' +
+            '--bar-background-active:' +
+            budget?.color?.active +
+            ';'
+          "
+        ></ion-range>
       </div>
       <span class="budget-notice">
-        🔥 Your burn rate for Shopping is on track
+        {{ budget?.notice }}
       </span>
     </div>
   `,
@@ -44,6 +56,7 @@ import { IonicModule } from '@ionic/angular';
         min-height: 15.313rem;
         border-radius: 1.563rem;
         padding: 1rem;
+        margin-bottom: 1.2rem;
       }
 
       .budget-card ion-label {
@@ -84,8 +97,6 @@ import { IonicModule } from '@ionic/angular';
       }
 
       ion-range {
-        --bar-background: rgba(92, 154, 247, 0.2);
-        --bar-background-active: #5c9af7;
         --bar-height: 18px;
         --bar-border-radius: 8px;
         --knob-size: 0px;
@@ -100,9 +111,14 @@ import { IonicModule } from '@ionic/angular';
   ],
 })
 export class BudgetCardComponent implements OnInit {
-  constructor() {}
+  @Input() budget: any = {};
+  constructor(private helper: HelperService) {}
 
   ngOnInit() {}
+
+  formatMoney(value) {
+    return this.helper.format(value);
+  }
 }
 
 @NgModule({
