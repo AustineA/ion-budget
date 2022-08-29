@@ -1,13 +1,15 @@
 <ion-content class="ion-padding" color="dark-100">
   <section class="hero">
     <span class="title">Budget</span>
-    <p class="large-amount">$1,230</p>
-    <span class="sub-title">Left out of $3,000 budgeted</span>
+    <p class="large-amount">{{formatMoney(totalSpent(budgets))}}</p>
+    <span class="sub-title"
+      >Left out of {{formatMoney(totalBudget(budgets))}} budgeted</span
+    >
   </section>
 
   <section>
     <budget-card [budget]="budget" *ngFor="let budget of budgets"></budget-card>
   </section>
 
-  <fbc [title]="'Budget'"></fbc>
+  <fbc title="Budget"></fbc>
 </ion-content>

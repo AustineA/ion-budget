@@ -1,8 +1,8 @@
 export const budgets = [
   {
     category: 'Shopping',
-    limit: 2000,
-    spent: 1500,
+    limit: 500,
+    spent: 100,
     left: 500,
     notice: '🔥 Your  burn rate for Shopping is on track',
     icon: '/assets/budget-icons/shopping.svg',
@@ -27,8 +27,8 @@ export const budgets = [
   },
   {
     category: 'Transportation',
-    limit: 2000,
-    spent: 1500,
+    limit: 150,
+    spent: 65,
     left: 500,
     notice: '🔥 Your  burn rate for Transportation is on track',
     icon: '/assets/budget-icons/transport.svg',
@@ -40,8 +40,8 @@ export const budgets = [
   },
   {
     category: 'Entertainment',
-    limit: 2000,
-    spent: 1500,
+    limit: 100,
+    spent: 15,
     left: 500,
     notice: '😱 Watch your Entertainment burn rate',
     icon: '/assets/budget-icons/entertainment.svg',
@@ -53,8 +53,8 @@ export const budgets = [
   },
   {
     category: 'Gift',
-    limit: 2000,
-    spent: 1500,
+    limit: 300,
+    spent: 150,
     left: 500,
     notice: '🔥 Your  burn rate for Gift is on track',
     icon: '/assets/budget-icons/gift.svg',
@@ -66,8 +66,8 @@ export const budgets = [
   },
   {
     category: 'Pet',
-    limit: 2000,
-    spent: 1500,
+    limit: 200,
+    spent: 180,
     left: 500,
     notice: '🔥 Your  burn rate for Pet is on track',
     icon: '/assets/budget-icons/pet.svg',
@@ -79,8 +79,8 @@ export const budgets = [
   },
   {
     category: 'Education',
-    limit: 2000,
-    spent: 1500,
+    limit: 500,
+    spent: 350,
     left: 500,
     notice: '🔥 Your  burn rate for Education is on track',
     icon: '/assets/budget-icons/education.svg',

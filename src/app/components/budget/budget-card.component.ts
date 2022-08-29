@@ -23,7 +23,7 @@ import { HelperService } from 'src/app/services/shared/helper.service';
         </div>
         <div class="budget-card-meta-item">
           <span>Left</span>
-          <b>{{ formatMoney(budget?.left) }}</b>
+          <b>{{ formatMoney(budget?.limit - budget?.spent) }}</b>
         </div>
         <div class="budget-card-meta-item">
           <span>Limit</span>
@@ -32,7 +32,7 @@ import { HelperService } from 'src/app/services/shared/helper.service';
       </div>
       <div class="budget-card-meter">
         <ion-range
-          [value]="50"
+          [value]="rangeMeter(budget?.limit, budget?.spent)"
           disabled="true"
           [style]="
             '--bar-background:' +
@@ -45,7 +45,11 @@ import { HelperService } from 'src/app/services/shared/helper.service';
         ></ion-range>
       </div>
       <span class="budget-notice">
-        {{ budget?.notice }}
+        {{
+          rangeMeter(budget?.limit, budget?.spent) > 70
+            ? ' 😱 Watch your burn rate!!!'
+            : ' 🔥 Your  burn rate for is on track!'
+        }}
       </span>
     </div>
   `,
@@ -106,6 +110,8 @@ import { HelperService } from 'src/app/services/shared/helper.service';
       .budget-notice {
         display: block;
         margin-top: 0.8rem;
+        font-size: 0.9rem;
+        color: #909090;
       }
     `,
   ],
@@ -118,6 +124,10 @@ export class BudgetCardComponent implements OnInit {
 
   formatMoney(value) {
     return this.helper.format(value);
+  }
+
+  rangeMeter(limit, spent) {
+    return (spent / limit) * 100;
   }
 }
 
