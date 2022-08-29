@@ -19,6 +19,7 @@ import { IonicModule } from '@ionic/angular';
         position: fixed;
         bottom: 1rem;
         right: 1rem;
+        z-index: 10000;
       }
 
       ion-button {
