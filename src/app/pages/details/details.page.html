@@ -12,4 +12,9 @@
 
 <ion-content class="ion-padding">
   <details-card [budget]="budget" *ngIf="budget"></details-card>
+  <section>
+    <div class="graph-card">
+      <canvas id="burnChart">{{ chart }}</canvas>
+    </div>
+  </section>
 </ion-content>
