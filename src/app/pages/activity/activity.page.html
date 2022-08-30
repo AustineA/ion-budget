@@ -1,9 +1,22 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>activity</ion-title>
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="ios" color="dark-100">
+    <ion-buttons slot="start" mode="md">
+      <ion-back-button class="recipe-back_btn" mode="ios" text="">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-no-padding">Activity</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding">
+  <section>
+    <div class="activity-header">
+      <span class="title">This Month</span>
 
+      <div>
+        <ion-icon name="options-outline"></ion-icon>
+        <span class="title">Filter</span>
+      </div>
+    </div>
+  </section>
 </ion-content>

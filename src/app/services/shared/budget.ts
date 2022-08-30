@@ -95,6 +95,33 @@ export const budgets = [
     },
     currency: '$',
     title: 'Transportation',
+    transactions: [
+      {
+        title: 'Netflix',
+        date: 'Aug. 27',
+        amount: 15,
+      },
+      {
+        title: 'Apple TV',
+        date: 'Aug. 27',
+        amount: 10,
+      },
+      {
+        title: 'Spotify',
+        date: 'Aug. 27',
+        amount: 25,
+      },
+      {
+        title: 'YouTube Premium',
+        date: 'Aug. 27',
+        amount: 5,
+      },
+      {
+        title: 'HBO Max',
+        date: 'Aug. 27',
+        amount: 20,
+      },
+    ],
   },
   {
     id: '4',
