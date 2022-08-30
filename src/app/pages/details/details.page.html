@@ -23,7 +23,7 @@
     <span class="title">Transactions</span>
     <div class="graph-card">
       <transaction-list
-        [budget]="budget"
+        [lastIndex]="budget?.transactions.length - 1"
         [transaction]="transaction"
         [index]="i"
         *ngFor="let transaction of budget?.transactions; let i = index"

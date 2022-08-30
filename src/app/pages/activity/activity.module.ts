@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { ActivityPageRoutingModule } from './activity-routing.module';
 
 import { ActivityPage } from './activity.page';
+import { TransactionListCardModule } from 'src/app/components/budget/transaction-list.component';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ActivityPageRoutingModule
+    TransactionListCardModule,
+    ActivityPageRoutingModule,
   ],
-  declarations: [ActivityPage]
+  declarations: [ActivityPage],
 })
 export class ActivityPageModule {}

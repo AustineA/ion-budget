@@ -8,16 +8,16 @@ import { HelperService } from 'src/app/services/shared/helper.service';
   template: `
     <div
       class="transactions-card"
-      [style]="
-        budget?.transactions?.length - 1 === index ? 'border-bottom: none' : ''
-      "
+      [style]="lastIndex === index ? 'border-bottom: none' : ''"
     >
       <div>
         <ion-label>{{ transaction?.title }}</ion-label>
-        <span class="budget-category">{{ budget?.category }}</span>
+        <span class="budget-category" [style]="'color:' + transaction?.color">{{
+          transaction?.category
+        }}</span>
       </div>
       <div class="budget-amount">
-        <ion-label>-$15</ion-label>
+        <ion-label>-{{ formatMoney(transaction?.amount) }}</ion-label>
         <span class="budget-category">{{ transaction?.date }}</span>
       </div>
     </div>
@@ -50,18 +50,16 @@ import { HelperService } from 'src/app/services/shared/helper.service';
   ],
 })
 export class TransactionListComponent implements OnInit {
-  @Input() budget: any = {};
   @Input() transaction: any;
   @Input() index: any;
+  @Input() lastIndex: any;
 
-  constructor() {}
+  constructor(private helper: HelperService) {}
 
-  ngOnInit() {
-    console.log(
-      this.budget?.transactions?.length - 1 == this.index
-        ? 'none !important'
-        : this.index
-    );
+  ngOnInit() {}
+
+  formatMoney(value) {
+    return this.helper.format(value);
   }
 }
 
