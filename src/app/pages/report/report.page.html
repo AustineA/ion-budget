@@ -24,10 +24,15 @@
     </div>
   </section>
 
+  <section class="hero">
+    <canvas id="reportChart">{{ chart }}</canvas>
+  </section>
+
   <section>
     <category-list
       [budget]="budget"
       *ngFor="let budget of budgets"
+      (click)="details(budget.id)"
     ></category-list>
   </section>
 </ion-content>

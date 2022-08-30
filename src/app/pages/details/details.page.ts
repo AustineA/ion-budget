@@ -13,7 +13,6 @@ export class DetailsPage implements OnInit {
   budget: any;
   id: any;
   chart: any;
-  delayed: any;
 
   constructor(private route: ActivatedRoute) {}
 
