@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { ReportPageRoutingModule } from './report-routing.module';
 
 import { ReportPage } from './report.page';
+import { CategoryListModule } from 'src/app/components/budget/category-list.component';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ReportPageRoutingModule
+    ReportPageRoutingModule,
+    CategoryListModule,
   ],
-  declarations: [ReportPage]
+  declarations: [ReportPage],
 })
 export class ReportPageModule {}

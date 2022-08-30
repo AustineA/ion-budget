@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { budgets } from 'src/app/services/shared/budget';
 
 @Component({
   selector: 'app-report',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./report.page.scss'],
 })
 export class ReportPage implements OnInit {
+  budgets = [];
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor() {
+    this.budgets = budgets;
   }
 
+  ngOnInit() {}
 }
