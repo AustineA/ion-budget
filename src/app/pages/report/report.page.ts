@@ -52,6 +52,9 @@ export class ReportPage implements OnInit {
         ],
       },
       options: {
+        layout: {
+          padding: 20,
+        },
         plugins: {
           legend: {
             display: false,
