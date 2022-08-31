@@ -46,7 +46,7 @@ export class ReportPage implements OnInit {
           {
             data: this.data(),
             backgroundColor: this.colors(),
-            hoverOffset: 4,
+            hoverOffset: 10,
             borderWidth: 0,
           },
         ],
@@ -62,7 +62,7 @@ export class ReportPage implements OnInit {
           tooltip: {
             callbacks: {
               label: function (ctx) {
-                console.log(ctx);
+                // console.log(ctx);
                 return `${ctx.label}: $${ctx.formattedValue}`;
               },
             },

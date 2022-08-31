@@ -38,7 +38,7 @@ export const chartData = {
       tooltip: {
         callbacks: {
           label: function (ctx) {
-            console.log(ctx);
+            // console.log(ctx);
             return `${ctx.label}: $${ctx.formattedValue}`;
           },
         },
